@@ -1,0 +1,3 @@
+# clear_repository
+![forLfb16](https://github.com/DjonniStorm/clear_repository/assets/48327702/48b39999-c1fd-48f0-92c6-6071636d95c7) Lab16
+![forLab17](https://github.com/DjonniStorm/clear_repository/assets/48327702/3ed9f9d8-6a5d-40a0-afff-cb3e0e4805bd) Lab17
