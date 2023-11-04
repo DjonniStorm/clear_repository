@@ -5,14 +5,14 @@ int a[Massiv];
 int n = 0;
 
 void number0() {
-	printf("\nсколько элементов = ");
+	printf("\nГ±ГЄГ®Г«ГјГЄГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў = ");
 	scanf_s("%d", &n);
-	if (n <= 20) printf("\nзаполняем\n");
-	else printf_s("\nмного");
+	if (n <= 20) printf("\nГ§Г ГЇГ®Г«Г­ГїГҐГ¬\n");
+	else printf_s("\nГ¬Г­Г®ГЈГ®");
 	for (int i = 0; i < n; i++) { 
 		scanf_s("%d", &a[i]); 
 	}
-	printf("\nзаполнено\n");
+	printf("\nГ§Г ГЇГ®Г«Г­ГҐГ­Г®\n");
 	
 }
 void number1() {
@@ -22,7 +22,7 @@ void number1() {
 }
 void number2() {
 	int elementindex; int l = 0;
-	printf("удалить элемент номер \n");
+	printf("ГіГ¤Г Г«ГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ Г­Г®Г¬ГҐГ° \n");
 	scanf_s("%d", &elementindex);
 	int b[20];
 	for (int i = 0; i < n; i++) {
@@ -42,9 +42,9 @@ void number2() {
 }
 void number3() {
 	int element, elementindex; 
-	printf("на какое место вставить? ");
+	printf("Г­Г  ГЄГ ГЄГ®ГҐ Г¬ГҐГ±ГІГ® ГўГ±ГІГ ГўГЁГІГј? ");
 	scanf_s("%d", &elementindex);
-	printf("число = ");
+	printf("Г·ГЁГ±Г«Г® = ");
 	scanf_s("%d", &element);
 	int b[20];
 	for (int i = 0; i < n; i++) {
@@ -121,14 +121,14 @@ void main()
 	SetConsoleCP(1251); SetConsoleOutputCP(1251);
 	int number;
 	do {
-		printf("\n0 - ввести массив\n");
-		printf("1 - вывести массив\n");
-		printf("2 - удалить элемент\n");
-		printf("3 - вставить элемент\n");
-		printf("4 - удалить минимальный\n");
-		printf("5 - сделать ноль перед минимальным\n");
-		printf("6 - удалить чётный\n");
-		printf("\nномер = ");
+		printf("\n0 - ГўГўГҐГ±ГІГЁ Г¬Г Г±Г±ГЁГў\n");
+		printf("1 - ГўГ»ГўГҐГ±ГІГЁ Г¬Г Г±Г±ГЁГў\n");
+		printf("2 - ГіГ¤Г Г«ГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ\n");
+		printf("3 - ГўГ±ГІГ ГўГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ\n");
+		printf("4 - ГіГ¤Г Г«ГЁГІГј Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г»Г©\n");
+		printf("5 - Г±Г¤ГҐГ«Г ГІГј Г­Г®Г«Гј ГЇГҐГ°ГҐГ¤ Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г»Г¬\n");
+		printf("6 - ГіГ¤Г Г«ГЁГІГј Г·ВёГІГ­Г»Г©\n");
+		printf("\nГ­Г®Г¬ГҐГ° = ");
 		scanf_s("%d", &number);
 		switch (number)
 		{
@@ -154,7 +154,7 @@ void main()
 			number6();
 			break;
 		default:
-			break;
+			return;
 		}
 	} while (1);
 }
